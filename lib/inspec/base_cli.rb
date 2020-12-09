@@ -162,7 +162,6 @@ module Inspec
         desc: "Use --no-diff to suppress 'diff' output of failed textual test results."
       option :sort_results_by, type: :string, default: "file", banner: "--sort-results-by=none|control|file|random",
         desc: "After normal execution order, results are sorted by control ID, or by file (default), or randomly. None uses legacy unsorted mode."
-      # TODO: Resolve how to access this in Profile.rb
       option :ludicrous_speed, type: :boolean,
         desc: "EXPERIMENTAL: Waived controls are never read into InSpec"
     end
