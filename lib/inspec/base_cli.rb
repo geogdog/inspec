@@ -164,6 +164,8 @@ module Inspec
         desc: "After normal execution order, results are sorted by control ID, or by file (default), or randomly. None uses legacy unsorted mode."
       option :ludicrous_speed, type: :boolean,
         desc: "EXPERIMENTAL: Waived controls are never read into InSpec"
+      option :retain_waiver_data, type: :boolean,
+        desc: "EXPERIMENTAL: Only works in conjunction with ludicrous_speed, retains waiver data about controls that were skipped"
     end
 
     def self.help(*args)
